@@ -5,6 +5,7 @@ import { KernelSize } from 'postprocessing'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import Ground from './Ground'
 import Triangle from './Triangle'
+import Circle from './Circle'
 import Rig from './Rig'
 
 
@@ -19,7 +20,12 @@ export default function Background() {
             <Triangle color="#ff2060" scale={0.009} rotation={[0, 0, Math.PI / 3]} />
             <Triangle color="cyan" scale={0.009} position={[2, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
             <Triangle color="orange" scale={0.009} position={[-2, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
-            <Triangle color="white" scale={0.009} position={[0, 2, -10]} rotation={[0, 0, Math.PI / 3]} />
+
+            <Triangle color="white" scale={0.009} position={[-4, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
+            <Triangle color="#CCA8E0" scale={0.009} position={[4, 0, -2]} rotation={[0, 0, Math.PI / 3]} />
+
+            <Triangle color="#79FE0C" scale={0.009} position={[0, 2, -10]} rotation={[0, 0, Math.PI / 3]} />
+            {/* <Circle color="green" scale={0.009} position={[0, 2, 2]} rotation={[0, 0, Math.PI / 3]}/> */}
             <Ground mirror={1} mixBlur={30} mixStrength={1} rotation={[-Math.PI / 2, 0, Math.PI / 2]} position-y={-0.8} />
           </Rig>
           <EffectComposer multisampling={8}>
