@@ -10,7 +10,7 @@ import Rig from './Rig'
 
 export default function Background() {
     return (
-      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 15] }} style={{height: '50vh', position: 'absolute'}}>
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 15] }} style={{height: '100vh', position: 'sticky', }}>
         <color attach="background" args={['black']} />
         <ambientLight />
         <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
