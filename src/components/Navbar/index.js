@@ -1,19 +1,28 @@
 import React from 'react';
 import { StyledHeader, 
-        Outer, 
-        Nav } from './styles';
+        Inner,
+        Nav,
+        FlexWrap,
+        LeftWrap,
+        RightWrap,
+        Logo,
+        LeftContent } from './styles';
 
 
 export default function Navbar(){
     return (
         <StyledHeader>
-            <Outer>
+            <Inner>
                 <Nav>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
+                    <FlexWrap>
+                        <LeftWrap>
+                            <Logo>CJ</Logo>
+                            <LeftContent><ul><li>test</li><li>test</li><li>test</li></ul></LeftContent>
+                        </LeftWrap>
+                        <RightWrap></RightWrap>
+                    </FlexWrap>
                 </Nav>
-            </Outer>
+            </Inner>
         </StyledHeader>
     );
 };

@@ -10,6 +10,7 @@ export const HeroWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     z-index: 3;
+    display: none;
 
     h1 {
         font-size: 2.8em;
